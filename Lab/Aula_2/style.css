@@ -1,0 +1,141 @@
+
+:root {
+    --primary: #0d9488;
+    --primary-hover: #0f766e;
+    --primary-light: #99f6e4;
+    --primary-soft: #f0fdfa;
+    
+    --bg-body: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-alt: #f1f5f9;
+    
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --text-light: #94a3b8;
+    
+    --border-color: #e2e8f0;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    
+    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.06);
+    
+    --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --transition: all 0.25s ease-in-out;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    font-size: 16px;
+}
+
+body{
+    font-family: var(--font-main);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.cabecalho-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.logo-conteiner{
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.logo-conteiner .logo{
+    height: 44px;
+    width: auto;
+}
+
+.marca h1{
+    height: 44px;
+    width: auto;
+}
+
+.marca p{
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.cabecalho-principal nav{
+    display: flex;
+    text-decoration: none;
+    gap:1,8rem;
+}
+
+.cabecalho-principal nav a{
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    padding: 0.6rem 0.3rem;
+}
+
+.cabecalho-principal img{
+    height: 44px;
+    width: auto;
+}
+
+.sessao-inicio{
+    display: flex;
+
+}
+
+.imagem-inicio{
+    width: 560px;
+}
+
+.imagem-inicio img{
+    border-radius: var(--radius-lg);
+}
+
+.cartao-modalidade img{
+    width: 300px;
+}
+
+.cartao-modalidade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartao-modalidade header{
+    width: 100%;
+}
+
+.cabecalho-principal, main, footer{
+    padding: 0 80px;
+}
+
+.grid-beneficios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-beneficios{
+    width: 200px;
+    border: 2px solid var(--border-color);
+    background-color: #ffffff;
+}
